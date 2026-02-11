@@ -51,6 +51,7 @@ class Main {
         System.out.println("Try programiz.pro");
         int n = 10;
         // int nbrStars = 1;
+        
         // int middle = (int)Math.ceil(n / 2);
         
         for(int i = 1; i <= n; i++) {

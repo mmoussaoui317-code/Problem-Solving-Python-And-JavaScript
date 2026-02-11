@@ -1,4 +1,5 @@
 class SmartLearningSystem {
+
     constructor() {
         this.weeklyFocus ='MERN + Security',
         this.dailyTime = 4; //hours
