@@ -1,0 +1,117 @@
+Voici une série d'exercices Python sur les conditions, les boucles et les tableaux (listes), sans solutions. À vous de coder !
+
+---
+
+NIVEAU DÉBUTANT
+
+Exercice 1 : Pair ou Impair
+
+Écrivez un programme qui demande un nombre à l'utilisateur et affiche s'il est pair ou impair.
+
+Exercice 2 : Table de multiplication
+
+Affichez la table de multiplication d'un nombre saisi par l'utilisateur (de 1 à 10).
+
+Exercice 3 : Maximum d'une liste
+
+Créez une fonction qui trouve le plus grand élément d'une liste (sans utiliser max()).
+
+Exercice 4 : Compte à rebours
+
+Écrivez un programme qui affiche un compte à rebours de 10 à 0, puis "Bonne année !".
+
+Exercice 5 : Somme d'une liste
+
+Calculez la somme des éléments d'une liste donnée (sans utiliser sum()).
+
+---
+
+NIVEAU INTERMÉDIAIRE
+
+Exercice 6 : Analyse de notes
+
+Créez un programme qui :
+
+1. Demande à l'utilisateur de saisir 5 notes.
+2. Les stocke dans une liste.
+3. Calcule et affiche :
+   · La moyenne
+   · La note la plus haute
+   · La note la plus basse
+   · Le nombre de notes supérieures à 10
+
+Exercice 7 : Recherche dans une liste
+
+Écrivez une fonction qui recherche un élément dans une liste et retourne son indice (ou -1 s'il n'existe pas). Ne pas utiliser index().
+
+Exercice 8 : Filtrer les pairs
+
+Créez une fonction qui prend une liste de nombres et retourne une nouvelle liste contenant uniquement les nombres pairs.
+
+Exercice 9 : Inverser une liste
+
+Écrivez une fonction qui inverse l'ordre des éléments d'une liste (sans utiliser reverse() ou slicing [::-1]).
+
+Exercice 10 : Compteur de voyelles
+
+Demandez une chaîne de caractères à l'utilisateur et comptez le nombre de voyelles (a, e, i, o, u, y) qu'elle contient.
+
+---
+
+NIVEAU AVANCÉ
+
+Exercice 11 : Manipulation de matrices
+
+Créez une matrice 3x3 (liste de listes) et calculez :
+
+· La somme de chaque ligne
+· La somme de chaque colonne
+· La somme de la diagonale principale
+
+Exercice 12 : Tri à bulles
+
+Implémentez l'algorithme de tri à bulles pour trier une liste dans l'ordre croissant.
+
+Exercice 13 : Jeu du plus ou moins
+
+Créez un jeu où l'ordinateur choisit un nombre aléatoire entre 1 et 100 et l'utilisateur doit le deviner. Le programme donne des indices ("plus grand", "plus petit") et compte le nombre d'essais.
+
+Exercice 14 : Fusion de listes triées
+
+Écrivez une fonction qui fusionne deux listes déjà triées en une seule liste triée.
+
+Exercice 15 : Palindrome
+
+Vérifiez si un mot est un palindrome (se lit identiquement dans les deux sens). Ignorez la casse.
+
+---
+
+DÉFIS SUPPLEMENTAIRES
+
+Exercice 16 : Suppression des doublons
+
+Écrivez une fonction qui prend une liste et retourne une nouvelle liste sans doublons (en conservant l'ordre d'apparition).
+
+Exercice 17 : Carré magique
+
+Vérifiez si une matrice 3x3 est un carré magique (sommes de chaque ligne, colonne et diagonale principales égales).
+
+Exercice 18 : Analyse de texte
+
+Demandez un texte à l'utilisateur et comptez :
+
+· Le nombre de mots
+· Le nombre de phrases (en comptant les points, points d'exclamation, d'interrogation)
+· Le nombre de paragraphes (en comptant les lignes vides)
+
+Exercice 19 : Générateur de mot de passe
+
+Générez un mot de passe aléatoire de longueur 12 contenant au moins une lettre majuscule, une minuscule, un chiffre et un caractère spécial.
+
+Exercice 20 : Simulation de dé
+
+Simulez 1000 lancers d'un dé à 6 faces et affichez le pourcentage d'apparition de chaque face.
+
+---
+
+Bon courage ! N'hésitez pas à demander des indices si vous bloquez.

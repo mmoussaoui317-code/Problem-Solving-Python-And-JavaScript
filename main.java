@@ -44,83 +44,100 @@
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Main {
-    public static void main(String[] args) {
-        System.out.println("Try programiz.pro");
-        int n = 10;
-        // int nbrStars = 1;
-        
-        // int middle = (int)Math.ceil(n / 2);
-        
-        for(int i = 1; i <= n; i++) {
-            for(int j = n - i; j > 0; j--) {
-                System.out.print(" ");
-            }
-            // for(int k = 0; k < nbrStars; k++) {
-            //     System.out.print("*");
-            // }
-            if(i == 1) {
-                System.out.println("*");
-            }
-            
-            // if( i >  1) {
-                for(int l = 0; l < i * 2; l++) {
-                    System.out.print("*");
-                }
-            // }
-            // nbrStars++;
-            System.out.println();
-        }
-        
-    }
-}
+// class Main {
+//     public static void main(String[] args) {
+//         System.out.println("Try programiz.pro");
+//         int n = 10;
+//         // int nbrStars = 1;
 
-// schema of the Zarabiya like this * * * * * * 
-				    * +       *
-				    *  +      *
-				    *   +     *
-				    *     +   *
-				    *       + *
-				    * * * * * * 
+//         // int middle = (int)Math.ceil(n / 2);
+// 
+//         for(int i = 1; i <= n; i++) {
+//             for(int j = n - i; j > 0; j--) {
+//                 System.out.print(" ");
+//             }
+//             // for(int k = 0; k < nbrStars; k++) {
+//             //     System.out.print("*");
+//             // }
+//             if(i == 1) {
+//                 System.out.println("*");
+//             }
+// 
+//             // if( i >  1) {
+//                 for(int l = 0; l < i * 2; l++) {
+//                     System.out.print("*");
+//                 }
+//             // }
+//             // nbrStars++;
+//             System.out.println();
+//         }
+// 
+//     }
+// }
 
+// // schema of the Zarabiya like this * * * * * * 
+// Enter the Number Greater then 10: 10
+// * * * * * * * * * * * 
+// * *       |       * * 
+// *   *     |     *   * 
+// *     *   |   *     * 
+// *       * | *       * 
+// * - - - - + - - - - * 
+// *       * | *       * 
+// *     *   |   *     * 
+// *   *     |     *   * 
+// * *       |       * * 
+// * * * * * * * * * * * 
+
+// === Code Execution Successful ===
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
 
 class Main {
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         // System.out.println("Try programiz.pro");
+        System.out.print("Enter the Number Greater then 10: ");
+        int n = sc.nextInt();
         // System.nextInt()
-        int n = 18;
-        int cpt = 0;
-        int mdN = (int)Math.floor(n / 2);
+        // int cpt = 0;
+
+        while (n != 0) {
+            int mdN = (int)Math.floor(n / 2);
         
-        for(int i = 0; i <= n; i++) {
-            for(int j = 0; j <= n; j++) {
-                if(i == 0) {
-                    System.out.print("* ");
-                } else if(i != 0 && (j == 0 || j == n)) {
-                    System.out.print("* ");
-                } else if(i == n) {
-                    System.out.print("* ");
-                } else if(i == mdN && !(i == mdN && j == mdN)) {
-                    System.out.print("- ");
-                } else if(j == mdN && !(i == mdN && j == mdN)) {
-                    System.out.print("| ");
-                } else if(i == mdN && j == mdN) {
-                    System.out.print("+ ");
-                } else if(i == j) {
-                    System.out.print("* ");
-                } else if((n - cpt) == j) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");   
+            for(int i = 0; i <= n; i++) {
+                for(int j = 0; j <= n; j++) {
+                    if(i == 0) {
+                        System.out.print("* ");
+                    } else if(i != 0 && (j == 0 || j == n)) {
+                        System.out.print("* ");
+                    } else if(i == n) {
+                        System.out.print("* ");
+                    } else if(i == mdN && !(i == mdN && j == mdN)) {
+                        System.out.print("- ");
+                    } else if(j == mdN && !(i == mdN && j == mdN)) {
+                        System.out.print("| ");
+                    } else if(i == mdN && j == mdN) {
+                        System.out.print("+ ");
+                    } else if(i == j) {
+                        System.out.print("* ");
+                    } else if((n - i) == j) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");   
+                    }
                 }
+                // cpt++;
+                System.out.println("");
             }
-            cpt++;
-            System.out.println("");
+            
+            System.out.print("Enter the Number Greater then 10: ");
+            n = sc.nextInt();
         }
+        System.out.print("Good Bye !");
     }
 }
