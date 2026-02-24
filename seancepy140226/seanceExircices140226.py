@@ -43,7 +43,7 @@
 # except:
 #     print("Error")
 
-# programme compte a rebours
+# programme compte a Rebours
 
 # try: 
 #     for i in range(10, 0, -1):
@@ -272,20 +272,64 @@
 
 # function take list and return new list without same elements
 
-def removeDuplicate(list):
-    return list(set(list))
+### with set you can need this function just one time
+# def removeDuplicate(list):
+#     newList = set()
+#     for(i, element) in enumerate(list):
+#         if element in list[i + 1:]:
+#             newList.add(element)
 
-try: 
-    list = []
+#     return newList.tolist()
+### take the word from the user and directly insert it in the set to remove the duplicate
 
-    n = int(input('Enter the number of element of the list:'))
+# try: 
+#     list = set()
 
-    for i in range(1, n):
-        element = int(input(f"Enter the {i} element of the list: "))
-        list.append(element)
+#     n = int(input('Enter the number of element of the list:'))
 
-    print("The list is: ", list)
+#     for i in range(1, n):
+#         element = input(f"Enter the {i} element of the list: ")
+#         list.add(element)
 
-    print("The new list is: ", removeDuplicate(list))
+#     print("The list is: ", [element for element in list])
+
+#     # print("The new list is: ", removeDuplicate(list))
+# except: 
+#     print("Error")
+
+# TP: 17 - try to calculate the some of every line and column and diagonal principal and verify if the matrix is magic square
+
+# try: 
+#     list = [
+#         [1, 1, 1],
+#         [1, 1, 1],
+#         [1, 1, 1]
+#     ]
+
+#     for i in range(len(list)):
+#         print("The sum of the line", i + 1, "is: ", sum(list[i]))
+
+#     for i in range(len(list)):
+#         print("The sum of the column", i + 1, "is: ", sum([list[j][i] for j in range(len(list))]))
+
+#     print("The sum of the principal diagonal is: ", sum([list[i][i] for i in range(len(list))]))
+
+#     if sum(list[0]) == sum(list[1]) == sum(list[2]) == sum([list[i][i] for i in range(len(list))]):
+#         print("The matrix is magic square")
+#     else:
+#         print("The matrix is not magic square")
+# except: 
+#     print("Error")
+
+# ** TP 18: Analyse the text and print the number of words and the number of phrases and the number of paragraphs
+
+try:
+    text = input("Enter the text: ")
+
+    print("The number of words is: ", len(text.split()))
+
+    print("The number of phrases is: ", len(text.split(".")))
+
+    print("The number of paragraphs is: ", len(text.split("\n")))
 except: 
     print("Error")

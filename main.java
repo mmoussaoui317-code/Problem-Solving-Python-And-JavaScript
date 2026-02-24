@@ -1,39 +1,39 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-// import java.util.Scanner;
+import java.util.Scanner;
 
 
-// class Main {
+class Main {
     
-//     public static void main(String[] args) {
-//         Scanner reader = new Scanner(System.in); // Reading from System.in
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in); // Reading from System.in
 
-//         System.out.println("Try programiz.pro");
-//     // ans the next token of the input as an int
-//         System.out.println("Enter a number: ");
-//         int n = reader.nextInt();
-//         int totalPair = 0;
-//         int totalInPair = 0;
+        System.out.println("Try programiz.pro");
+    // ans the next token of the input as an int
+        System.out.println("Enter a number: ");
+        int n = reader.nextInt();
+        int totalPair = 0;
+        int totalInPair = 0;
         
-//         while(n != 100) {
-//             // for(int i = 0)
-//             if(n % 2 == 0) {
-//                 System.out.println("Even");
-//                 System.out.println(Math.pow(n, 2));
-//                 System.out.println(Math.sqrt(n));
-//                 totalPair += n;
-//             } else {
-//                 System.out.println("Odd");
-//                 totalInPair += n;
-//             }
-//             System.out.println("Enter a number: ");
-//             n = reader.nextInt();
-//         }
+        while(n != 100) {
+            // for(int i = 0)
+            if(n % 2 == 0) {
+                System.out.println("Even");
+                System.out.println(Math.pow(n, 2));
+                System.out.println(Math.sqrt(n));
+                totalPair += n;
+            } else {
+                System.out.println("Odd");
+                totalInPair += n;
+            }
+            System.out.println("Enter a number: ");
+            n = reader.nextInt();
+        }
         
-//         // Once finished
-//         reader.close();
-//     }
-// }
+        // Once finished
+        reader.close();
+    }
+}
 
 
 //diagonal Start
@@ -95,49 +95,49 @@
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Main {
-    public static Scanner sc = new Scanner(System.in);
-    public static void main(String[] args) {
-        // System.out.println("Try programiz.pro");
-        System.out.print("Enter the Number Greater then 10: ");
-        int n = sc.nextInt();
-        // System.nextInt()
-        // int cpt = 0;
+// class Main {
+//     public static Scanner sc = new Scanner(System.in);
+//     public static void main(String[] args) {
+//         // System.out.println("Try programiz.pro");
+//         System.out.print("Enter the Number Greater then 10: ");
+//         int n = sc.nextInt();
+//         // System.nextInt()
+//         // int cpt = 0;
 
-        while (n != 0) {
-            int mdN = (int)Math.floor(n / 2);
+//         while (n != 0) {
+//             int mdN = (int)Math.floor(n / 2);
         
-            for(int i = 0; i <= n; i++) {
-                for(int j = 0; j <= n; j++) {
-                    if(i == 0) {
-                        System.out.print("* ");
-                    } else if(i != 0 && (j == 0 || j == n)) {
-                        System.out.print("* ");
-                    } else if(i == n) {
-                        System.out.print("* ");
-                    } else if(i == mdN && !(i == mdN && j == mdN)) {
-                        System.out.print("- ");
-                    } else if(j == mdN && !(i == mdN && j == mdN)) {
-                        System.out.print("| ");
-                    } else if(i == mdN && j == mdN) {
-                        System.out.print("+ ");
-                    } else if(i == j) {
-                        System.out.print("* ");
-                    } else if((n - i) == j) {
-                        System.out.print("* ");
-                    } else {
-                        System.out.print("  ");   
-                    }
-                }
-                // cpt++;
-                System.out.println("");
-            }
+//             for(int i = 0; i <= n; i++) {
+//                 for(int j = 0; j <= n; j++) {
+//                     if(i == 0) {
+//                         System.out.print("* ");
+//                     } else if(i != 0 && (j == 0 || j == n)) {
+//                         System.out.print("* ");
+//                     } else if(i == n) {
+//                         System.out.print("* ");
+//                     } else if(i == mdN && !(i == mdN && j == mdN)) {
+//                         System.out.print("- ");
+//                     } else if(j == mdN && !(i == mdN && j == mdN)) {
+//                         System.out.print("| ");
+//                     } else if(i == mdN && j == mdN) {
+//                         System.out.print("+ ");
+//                     } else if(i == j) {
+//                         System.out.print("* ");
+//                     } else if((n - i) == j) {
+//                         System.out.print("* ");
+//                     } else {
+//                         System.out.print("  ");   
+//                     }
+//                 }
+//                 // cpt++;
+//                 System.out.println("");
+//             }
             
-            System.out.print("Enter the Number Greater then 10: ");
-            n = sc.nextInt();
-        }
-        System.out.print("Good Bye !");
-    }
-}
+//             System.out.print("Enter the Number Greater then 10: ");
+//             n = sc.nextInt();
+//         }
+//         System.out.print("Good Bye !");
+//     }
+// }
