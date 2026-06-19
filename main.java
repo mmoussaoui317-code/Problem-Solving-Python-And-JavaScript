@@ -45,36 +45,36 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 
-class Main {
-    public static void main(String[] args) {
-        System.out.println("Try programiz.pro");
-        int n = 10;
-        int nbrStars = 1;
+// class Main {
+//     public static void main(String[] args) {
+//         System.out.println("Try programiz.pro");
+//         int n = 10;
+//         int nbrStars = 1;
 
-        // int middle = (int)Math.ceil(n / 2);
+//         // int middle = (int)Math.ceil(n / 2);
 
-        for(int i = 1; i <= n; i++) {
-            for(int j = n - i; j > 0; j--) {
-                System.out.print(" ");
-            }
-            for(int k = 0; k < nbrStars; k++) {
-                System.out.print("*");
-            }
-            if(i == 1) {
-                System.out.println("*");
-            }
+//         for(int i = 1; i <= n; i++) {
+//             for(int j = n - i; j > 0; j--) {
+//                 System.out.print(" ");
+//             }
+//             for(int k = 0; k < nbrStars; k++) {
+//                 System.out.print("*");
+//             }
+//             if(i == 1) {
+//                 System.out.println("*");
+//             }
 
-            if( i >  1) {
-                for(int l = 0; l < i * 2; l++) {
-                    System.out.print("*");
-                }
-            }
-            nbrStars++;
-            System.out.println();
-        }
+//             if( i >  1) {
+//                 for(int l = 0; l < i * 2; l++) {
+//                     System.out.print("*");
+//                 }
+//             }
+//             nbrStars++;
+//             System.out.println();
+//         }
 
-    }
-}
+//     }
+// }
 
 // // schema of the Zarabiya like this * * * * * * 
 // Enter the Number Greater then 10: 10
