@@ -132,3 +132,88 @@
 # print(deletingRepeated([1,2,5,8,6,2,5,9,1,8,8]))
 
 # # # done
+
+# # # # TP 08: search a number in a list and return all the occurrences and there index
+
+# def searchInsteadList(list, element):
+#     arr= [[i, v] for (i, v) in enumerate(list) if v == element]
+#     return arr
+
+# L=[1,2,5,8,6,2,5,9,1,8,8] 
+# print(searchInsteadList(L, 1))
+
+# # # done
+
+# TP 09: create a code that let users convert money from $ to the MAD or the Invert
+# ### because :
+#              1$ = 10.86MAD
+#              1MAD = 0.092
+
+# def askTheOperation():
+#     print("which operation want to do ?")
+#     print("A - Convert Euro To Dirham \nB - convert Dirham To Euro")
+#     opr = input()
+#     return opr
+
+
+# def transformActions(operation, money):
+#     if operation.upper() == "A":
+#         return money * 10.86
+#     elif operation.upper() == "B" :
+#         return money * 0.092
+#     else:
+#         print("There Is No Operation Can Do It Sorry!!")
+#         return 0
+
+
+
+# def __main__():
+#     opr = askTheOperation()
+#     money = float(input("Enter the price here : "))
+#     result = transformActions(opr, money)
+#     print(f"The Price Become: {result}")
+#     return 0
+
+# __main__()
+
+#  # Done
+
+
+# # TP 10: Create A program can find the l'intersection between two array and return it in new array
+
+# def __main__():
+
+#     fr_arr = [12,24,1,35,24,88,120,155]
+#     sd_arr = [1,3,6,78,35,88,55]
+
+#     itr_arr = [item for item in fr_arr if item in sd_arr]
+
+#     print(f'{itr_arr}')
+
+#     return "God By Bro !!"
+
+# print(__main__())
+
+# # Done
+
+
+# TP 11: Create A program can reverse array
+
+
+def __main__():
+    or_arr = [8, 24, 48, 2, 16] 
+
+    or_arr.sort()
+
+    or_arr.reverse()
+
+    # rv_arr = [nbr for nbr in or_arr if True]
+
+    # print(rv_arr)
+
+    print(or_arr)
+
+    return "By By To See You Son"
+
+
+print(__main__())
